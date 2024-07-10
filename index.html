@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f4e7d62f88.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="public/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="public/slick/slick-theme.css"
+    />
+    <link
+      rel="icon"
+      href="public/image/favicon/site_logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="public/css/all.css" />
+    <title>Restfood Restaurant</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" class="header__logo">
+        <img src="public/image/icon/logo.png" alt="logo" />
+      </a>
+      <nav class="header__nav">
+        <a href="#home" class="header__link">HOME</a>
+        <a href="#about" class="header__link">ABOUT US</a>
+        <a href="#chefs" class="header__link">CHEFS</a>
+        <a href="#menu" class="header__link">MENU</a>
+        <a href="#gallery" class="header__link">GALLERY</a>
+        <a href="#contacts" class="header__link">CONTACTS</a>
+      </nav>
+      <div class="header__button--open">
+        <a onclick="openMenu()"><i class="fa-solid fa-bars"></i></a>
+      </div>
+      <nav class="header__burger">
+        <a class="header__button--close" onclick="closeMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about us</a></li>
+          <li><a href="#chefs">chefs</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#contacts">contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="home__main">
+          <h1>BEST QUALITY FOOD</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
+            provident laborum, recusandae delectus corrupti reprehenderit error
+            distinctio eligendi qui consequuntur officia.
+          </p>
+          <a href="#book" class="button">book a table</a>
+        </div>
+        <div class="home__menu">
+          <div class="home__text">
+            <h2 class="title">OUR SPECIAL DISHES</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
+              labore quasi temporibus consectetur suscipit sunt tenetur, veniam
+              neque distinctio fugit in sint natus deserunt hic eaque dolores.
+            </p>
+          </div>
+          <div class="home__slider">
+            <div class="home__item">
+              <img src="public/image/menu/burger.png" alt="burger" />
+              <h3>burger</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+              <p class="price">$8.60</p>
+            </div>
+            <div class="home__item">
+              <img src="public/image/menu/beef_burger.jpg" alt="beef_burger" />
+              <h3>Beef Burger Meal</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+              <p class="price">$12.99</p>
+            </div>
+            <div class="home__item">
+              <img
+                src="public/image/menu/double_cheese_pizza.jpg"
+                alt="double_cheese_pizza"
+              />
+              <h3>Double Cheese Pizza</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+              <p class="price">$15.00</p>
+            </div>
+            <div class="home__item">
+              <img
+                src="public/image/menu/ceaser_salad.png"
+                alt="ceaser_salad"
+              />
+              <h3>ceaser salad</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+              <p class="price">$10.00</p>
+            </div>
+            <div class="home__item">
+              <img src="public/image/menu/pasta.jpg" alt="pasta" />
+              <h3>pasta</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+              <p class="price">$11.30</p>
+            </div>
+          </div>
+          <div class="home__controls">
+            <i class="fa-solid fa-arrow-left-long" id="prev-slide"></i>
+            <i class="fa-solid fa-arrow-right-long" id="next-slide"></i>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="about__body">
+          <div class="about__image">
+            <a class="button" id="modal_play">
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+          <div class="about__text">
+            <h2 class="title">GOOD FOOD FOR YOUR ALL DAY GOOD MOOD</h2>
+            <p>
+              Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque
+              dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi
+              nobis, vero expedita voluptate dignissimos officiis quis pariatur
+              earum voluptas quia sed.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque
+              dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi
+              nobis, vero expedita voluptate dignissimos officiis quis pariatur
+              earum voluptas quia sed.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque
+              dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi
+              nobis, vero expedita voluptate dignissimos officiis quis pariatur
+              earum voluptas quia sed.
+            </p>
+            <div class="about__container">
+              <div class="about__item">
+                <img
+                  src="public/image/icon/advantage-1.png"
+                  alt="about__icon1"
+                />
+                <p>EXPERIENCED CHEFS</p>
+              </div>
+              <div class="about__item">
+                <img
+                  src="public/image/icon/advantage-2.png"
+                  alt="about__icon2"
+                />
+                <p>ORIGINAL RECIPES</p>
+              </div>
+              <div class="about__item">
+                <img
+                  src="public/image/icon/advantage-3.png"
+                  alt="about__icon3"
+                />
+                <p>FRESH INGREDIENTS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__discount">
+          <h2 class="title">DOUBLE CHEESE PIZZA 30% OFF FRIDAY ONLY</h2>
+          <a href="#book" class="button">book a table</a>
+        </div>
+        <div id="modal_window" style="display: none">
+          <div class="modal_content">
+            <button class="modal_close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <iframe
+              class="modal_video"
+              width="100%"
+              height="500px"
+              src="https://www.youtube.com/embed/0O2aH4XLbto"
+              title="Ronald Jenkees - Throwing Fire"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="chefs">
+        <div class="chefs__text">
+          <h2 class="title">OUR BEST CHEF</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
+            labore quasi temporibus consectetur suscipit sunt tenetur, veniam
+            neque distinctio fugit in sint natus deserunt hic eaque dolores.
+          </p>
+        </div>
+        <div class="chefs__container">
+          <div class="chefs__item">
+            <img src="public/image/chef/chef-1.jpg" alt="chef_1" />
+            <h3>RICHARD NAUZ</h3>
+            <p>food chef</p>
+            <div class="chefs__contacts">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="chefs__item">
+            <img src="public/image/chef/chef-2.jpg" alt="chef_2" />
+            <h3>OLIVIA GROSH</h3>
+            <p>food chef</p>
+            <div class="chefs__contacts">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="chefs__item">
+            <img src="public/image/chef/chef-3.jpg" alt="chef_3" />
+            <h3>JEREMY WHITE</h3>
+            <p>food chef</p>
+            <div class="chefs__contacts">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="chefs__item">
+            <img src="public/image/chef/chef-4.jpg" alt="chef_4" />
+            <h3>HOWARD HOLMES</h3>
+            <p>food chef</p>
+            <div class="chefs__contacts">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="menu">
+        <h2 class="title">our menu</h2>
+        <div class="menu__title">
+          <ul class="menu__list" id="menu__list"></ul>
+        </div>
+        <div class="menu__gallery" id="menu__gallery"></div>
+      </section>
+      <section id="gallery">
+        <h2 class="title">GALLERY</h2>
+        <div class="gallery__container">
+          <img
+            src="public/image/gallery/gallery-1.jpg"
+            alt="gallery_1"
+            class="gallery__item"
+          />
+
+          <img
+            src="public/image/gallery/gallery-2.jpg"
+            alt="gallery_2"
+            class="gallery__item"
+          />
+
+          <img
+            src="public/image/gallery/gallery-3.jpg"
+            alt="gallery_3"
+            class="gallery__item"
+          />
+
+          <img
+            src="public/image/gallery/gallery-4.jpg"
+            alt="gallery_4"
+            class="gallery__item"
+          />
+
+          <img
+            src="public/image/gallery/gallery-5.jpg"
+            alt="gallery_5"
+            class="gallery__item"
+          />
+
+          <img
+            src="public/image/gallery/gallery-6.jpg"
+            alt="gallery_6"
+            class="gallery__item"
+          />
+        </div>
+      </section>
+      <section id="book">
+        <h2 class="title">BOOK A TABLE</h2>
+        <div class="book__body">
+          <form class="book__form">
+            <div class="book__input">
+              <label for="name">NAME</label>
+              <input type="text" id="name" placeholder="Name" />
+            </div>
+            <div class="book__input">
+              <label for="surname">LAST NAME</label>
+              <input type="text" id="surname" placeholder="Last Name" />
+            </div>
+            <div class="book__input">
+              <label for="tel">PHONE</label>
+              <input type="tel" id="tel" placeholder="Phone" />
+            </div>
+            <div class="book__input">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+            <div class="book__input">
+              <label for="date">DATE</label>
+              <input type="text" id="date" placeholder="mm-dd-yy" />
+            </div>
+            <div class="book__input">
+              <label for="time">TIME</label>
+              <input type="text" id="time" placeholder="12:00 AM" />
+            </div>
+            <button class="button">BOOK A TABLE</button>
+          </form>
+          <div class="book__text">
+            <h3>OPENING HOURS</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et,
+              inventore hic nulla, provident laudantium voluptate ipsa eligendi
+              commodi mollitia vero animi, repudiandae quidem minima est sint
+              sapiente quas iure deleniti.
+            </p>
+            <div class="book__item">
+              <p>Monday - Friday</p>
+              <p>8AM - 6PM</p>
+            </div>
+            <div class="book__item">
+              <p>Saturday</p>
+              <p>9AM - 5PM</p>
+            </div>
+            <div class="book__item">
+              <p>Sunday</p>
+              <p>9AM - 4PM</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contacts">
+      <h2 class="title">CONTACTS</h2>
+      <div class="contacts__container">
+        <div class="contacts__item">
+          <h3><i class="fa-solid fa-location-dot"></i>LOCATION</h3>
+          <p>2900 Lapeer Rd, Port Hurons</p>
+        </div>
+        <div class="contacts__item">
+          <h3><i class="fa-solid fa-phone-flip"></i>PHONE</h3>
+          <a href="#">800 478 42 51</a>
+        </div>
+        <div class="contacts__item">
+          <h3><i class="fa-solid fa-envelope"></i>EMAIL</h3>
+          <p>info@restfood.com</p>
+        </div>
+        <div class="contacts__item">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="public/slick/slick.min.js"></script>
+    <script src="public/js/slider.js"></script>
+    <script src="public/js/header.js"></script>
+    <script src="public/js/filter.js"></script>
+    <script src="public/js/modal.js"></script>
+  </body>
+</html>

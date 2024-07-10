@@ -1,0 +1,141 @@
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__body {
+  display: flex;
+  background-image: url("../../image/background/bg-pattern.jpg");
+  padding: 100px 40px;
+  gap: 50px;
+}
+
+.about__image {
+  position: relative;
+  width: 40%;
+  background-image: url("../../image/background/about-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__image img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+}
+
+.about__image > .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 0px;
+  text-align: center;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  color: #b8b8b8;
+  gap: 20px;
+}
+
+.about__text > .title {
+  padding-left: 90px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 33%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  gap: 20px;
+}
+
+.about__item img {
+  width: 64px;
+}
+
+.about__item > p {
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+.about__discount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url("../../image/background/bg-offer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  padding: 100px 40px;
+  max-width: 1920px;
+}
+
+.about__discount > .title {
+  background-image: none;
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .about__body {
+    flex-direction: column-reverse;
+    padding: 100px 0px;
+  }
+  .about__text {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .about__image {
+    margin: 0 auto;
+    width: 95%;
+    height: 1000px;
+  }
+  .about__discount {
+    padding: 100px 20px;
+  }
+  .about__discount > .title {
+    width: 60%;
+  }
+}
+
+@media (max-width: 550px) {
+  .about__container {
+    flex-direction: column;
+  }
+  .about__image {
+    height: 500px;
+  }
+  .about__discount > .title {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .about__discount > .title {
+    width: 95%;
+  }
+}

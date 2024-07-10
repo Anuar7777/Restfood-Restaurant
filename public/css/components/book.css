@@ -1,0 +1,110 @@
+#book {
+  background-image: url("../../image/background/bg-pattern.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px 40px;
+}
+
+#book .title {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.book__body {
+  display: flex;
+  gap: 50px;
+}
+
+.book__form {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book__input {
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  flex-direction: column;
+}
+
+.book__input input {
+  outline: none;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  transition: 0.5s;
+  background-color: #000;
+  color: #fff;
+}
+
+.book__input input:focus {
+  border: 1px solid #ffcc33ff;
+}
+
+.book__input label {
+  color: #ffcc33ff;
+  letter-spacing: 3px;
+  font-size: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.book__text {
+  width: 40%;
+  background-color: #000;
+  padding: 30px;
+  text-align: left;
+}
+
+.book__text h3 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.book__text > p {
+  color: #b8b8b8;
+}
+
+.book__item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  margin: 40px 0px;
+}
+
+@media (max-width: 1000px) {
+  #book {
+    padding: 100px 0px;
+  }
+  #book .title {
+    width: 95%;
+    margin-bottom: 50px;
+  }
+  .book__body {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .book__form,
+  .book__text {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .book__form {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .book__input {
+    width: calc(100% - 20px);
+  }
+}
