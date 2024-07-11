@@ -1,4 +1,4 @@
-#contacts {
+#footer {
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -8,34 +8,34 @@
   padding: 100px 40px;
 }
 
-#contacts .title {
+#footer .title {
   width: 50%;
   margin-bottom: 50px;
 }
 
-#contacts a {
+#footer a {
   color: #ffcc33ff;
   font-size: 18px;
   transition: 0.5s;
   letter-spacing: 3px;
 }
 
-#contacts a:hover {
+#footer a:hover {
   color: #b8b8b8;
 }
 
-#contacts h3 {
+#footer h3 {
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-.contacts__container {
+.footer__container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.contacts__item {
+.footer__item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -44,41 +44,41 @@
   width: calc((100% - 20px) / 4);
 }
 
-.contacts__item > h3 > i {
+.footer__item > h3 > i {
   color: #ffcc33ff;
   margin-right: 20px;
 }
 
-.contacts__item:last-child {
+.footer__item:last-child {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.contacts__item:last-child i {
+.footer__item:last-child i {
   margin: 0px;
 }
 
 @media (max-width: 1000px) {
-  #contacts {
+  #footer {
     padding: 100px 0px;
   }
 
-  #contacts .title {
+  #footer .title {
     width: 95%;
   }
 
-  .contacts__container {
+  .footer__container {
     width: 95%;
     margin: 0 auto;
     gap: 20px;
   }
 
-  .contacts__item {
+  .footer__item {
     width: calc((100% - 20px) / 2);
   }
 
-  .contacts__item:last-child {
+  .footer__item:last-child {
     flex-direction: row;
     justify-content: flex-start;
     gap: 30px;
@@ -87,14 +87,14 @@
 }
 
 @media (max-width: 600px) {
-  .contacts__container {
+  .footer__container {
     gap: 40px;
   }
-  .contacts__item {
+  .footer__item {
     width: calc(100% - 20px);
     align-items: center;
   }
-  .contacts__item:last-child {
+  .footer__item:last-child {
     justify-content: center;
   }
 }
